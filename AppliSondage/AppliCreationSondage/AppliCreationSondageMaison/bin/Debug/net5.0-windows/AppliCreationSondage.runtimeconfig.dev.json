@@ -1,0 +1,9 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\adrie.ASUS-ADR\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\adrie.ASUS-ADR\\.nuget\\packages",
+      "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+    ]
+  }
+}

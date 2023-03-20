@@ -1,0 +1,33 @@
+Objectif du projet : 
+
+1 Planification du projet
+	-  Cahier des charges						-Fait |
+	- Diagramme de classe/définition de blocs
+	- Diagramme de séquences					-Fait |
+	- Diagramme de cas d'utilisation Globale et Personnel		-Fait |
+	- Diagramme d'exigences						-Fait |	Global a faire
+	- Diagramme de Gantt						-Fait |
+
+2 Ma Partie qui consiste a :
+	- Choisir un support pour créer l'application de création de sondages.
+
+L'application de création de sondages comportera une IHM avec :
+	- Une communication avec la base de données
+
+	- Des champs pour créer les sondages qui seront stockés dans la bdd.
+	( Dans ces champs on définira la question, les deux options, ainsi qu'une image pour chaque option.
+	 La date de début et la date de fin du sondage. )
+
+	- Champs pour accéder aux précédents sondages, avec possibilité de les modifier ou/et les supprimer.
+	( Les champs recupèreront les anciens sondages stockés dans la Bdd.)
+
+3 Réalisation du projet
+	-Mettre a jour le diagramme de gantt au besoin.
+	-Faire des traces écrites des actions réalisées afin d'argumenter lors des revues de projet.
+
+4 Tâche finale
+	1h de présentation orale qui consiste 
+		-20min de présentation du projet
+		-20min pour montrer le projet au jury (la réalisation et aussi montrer des exemple)
+		-20min de conclusion + questions du jury
+

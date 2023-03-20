@@ -1,0 +1,4 @@
+name : bddsondages
+mdp : '%STS*Mauriacdb'
+port: 3306 3307
+ip: 172.18.199.9

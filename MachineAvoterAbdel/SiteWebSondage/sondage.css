@@ -1,0 +1,463 @@
+body{	
+
+}
+
+html {
+    margin:0;
+    padding:0;
+    background: #009fd4;
+    background-size: cover;
+	overflow: hidden;
+}
+
+/*					BACKGROUND  				*/
+#bg1{
+	
+	background-image: url("./image/SVG/bg1.svg");
+	transform-origin: center;
+	background-repeat:no-repeat;
+	position: absolute;
+	
+	z-index:10;
+	width:28%;
+	height:50%;
+	
+    top: 26%;
+    left: 36%;
+    transform: translate(-50%,-50%);
+	animation-duration: 20s;
+	animation-name:rotation;
+	animation-iteration-count: infinite;
+	animation-direction: reverse ;
+
+}
+
+#bg2{
+	
+	background-image: url("./image/SVG/bg2.svg");
+	transform-origin: center;
+	background-repeat:no-repeat;
+	position: absolute;
+	
+	z-index:9;
+	width:39%;
+	height:65%;
+	
+    top: 17%;
+    left: 31%;
+    transform: translate(-50%,-50%);
+	animation-duration: 30s;
+	animation-name:rotation;
+	animation-iteration-count: infinite;
+	animation-direction: normal ;
+
+}
+
+#bg3{
+	
+	background-image: url("./image/SVG/bg3.svg");
+	transform-origin: center;
+	background-repeat:no-repeat;
+	position: absolute;
+	
+	z-index:7;
+	width: 45%;
+	height: 80%;
+	top: 10%;
+	left: 26%;
+    transform: translate(-50%,-50%);
+	animation-duration: 40s;
+	animation-name:rotation;
+	animation-iteration-count: infinite;
+	animation-direction: reverse ;
+
+}
+
+#bg4{
+	
+	background-image: url("./image/SVG/bg4.svg");
+	transform-origin: center;
+	background-repeat:no-repeat;
+	position: absolute;
+	
+	z-index:8;
+	width: 29%;
+	height: 53%;
+	top: 24%;
+	left: 36%;
+    transform: translate(-50%,-50%);
+	animation-duration: 50s;
+	animation-name:rotation;
+	animation-iteration-count: infinite;
+	animation-direction: normal ;
+
+}
+
+#bg5{
+	
+	background-image: url("./image/SVG/bg5.svg");
+	transform-origin: center;
+	background-repeat:no-repeat;
+	position: absolute;
+	
+	z-index:6;
+	width: 95%;
+	height: 167%;
+	top: -31%;
+	left: 0%;
+    transform: translate(-50%,-50%);
+	animation-duration: 15s;
+	animation-name:rotation;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+
+}
+
+/* #fond{ */
+
+	/* top:0px; */
+	/* left:0px; */
+	/* height:100%; */
+	/* width:100%; */
+	/* position:absolute; */
+	/* background-image: url("./image/SondageFond.svg"); */
+	/* background-repeat: no-repeat; */
+	
+/* } */
+
+
+#earth{
+	
+	display: inline-block;
+	transform: translate(-50%,-50%) scale(1.5, 1.5) rotate(0deg);
+	position: absolute;
+	
+    top: 50%;
+    left: 50%;
+	height: 200px;
+	width: 150px;
+	
+	background-image: url("./image/MachineAvoterLogo.svg");
+	background-repeat: no-repeat;	
+	z-index:1000;
+	transition: transform 3s;
+	
+	animation:5s 1 normal forwards earthQuiMonte !important;
+	
+}
+
+#earth:hover{
+
+	transform: translate(-50%,-50%) scale(1.5, 1.5) rotate(360deg);
+	cursor:pointer;
+}
+
+
+@keyframes grossissement{ 
+
+	
+	 from { 
+		height: 200px;
+		width: 150px;
+	 } 
+
+	 to { 
+		height: 250px;
+		width: 200px; 
+	 } 
+
+} 
+
+@keyframes rotation{
+
+	from{
+
+		transform:rotate(0deg);
+
+	}
+
+	to{
+
+		transform:rotate(360deg);
+
+	}
+
+}
+
+
+#terre{
+
+	background-image: url("./image/terre.svg");
+	position:absolute;
+	background-repeat:no-repeat;
+	background-size:cover;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:100%;
+	z-index:1000;
+	
+
+}
+
+#option1{
+
+	display: inline-block;
+	opacity:95%;
+	transform: translate(-50%,-50%) scale(1.5, 1.5) rotate(0deg);
+	position: absolute;
+    top: 70%;
+    left: 40%;
+	
+	min-width:6.7%;
+	min-height:20%;
+	max-height: 30%;
+	max-width: 10%;
+	
+	background-image: url("./image/chiffre.svg");
+	background-repeat: no-repeat;	
+	z-index:1000;
+
+
+}
+
+#option2{
+	
+	display: inline-block;
+	opacity:95%;
+	transform: translate(-50%,-50%) scale(1.5, 1.5) rotate(0deg);
+	position: absolute;
+    top: 70%;
+    left: 60%;
+	
+	min-width:6.7%;
+	min-height:20%;
+	max-height: 30%;
+	max-width: 10%;
+	
+	background-image: url("./image/chiffre.svg");
+	background-repeat: no-repeat;	
+	z-index:1000;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* GESTION AFFICHAGE DONNEES */
+
+/* .enAttente#page1>*{ */
+
+	/* margin-top:-100%; */
+
+/* } */
+
+	/*ANIMATION UN PAR UN DE LA PAGE 1*/
+
+	
+
+		/*EARTH*/
+
+		.enAttente#page1 #earth{
+			
+			animation:5s 1 normal forwards earthQuiTombe !important;
+
+		}
+
+		@keyframes earthQuiTombe{
+			from{
+				margin-top:0%;
+			}
+			to{
+				height:75%;
+				width:35%;
+				margin-top:100%
+			}
+		}
+		
+		@keyframes earthQuiMonte {
+			from{
+				height:75%;
+				width:35%;
+				margin-top:100%
+			}
+			to
+				margin-top:0%;
+			
+		}
+		
+		/*BG*/
+		
+		#page1>*{
+			
+			animation: 5s 1 normal forwards bgQuiDescend;
+			
+		}
+		
+		.enAttente#page1>*{
+			
+			animation: 5s 1 normal forwards bgQuiMonte;
+			
+		}
+		
+		@keyframes bgQuiMonte{
+			from{margin-top:0%;transform: translate(0%,0%);}
+			to{margin-top:-100%;transform: translate(0%,0%);}	
+		}
+		
+		@keyframes bgQuiDescend{
+			from{margin-top:-100%;transform: translate(0%,0%);}
+			to{margin-top:0%;transform: translate(0%,0%);}	
+		}
+	
+	/*ANIMATION UN PAR UN DE LA PAGE 2*/
+	
+		
+		/*SOLEIL*/
+		
+		#soleil{
+	
+			transform-origin: center;
+			position: absolute;
+			top: 0%;
+			right: 0%;
+			height: 64%;
+			width: 38%;
+			background-image: url("./image/soleil.svg");
+			background-repeat: no-repeat;	
+			z-index:999;
+			
+			animation: 7s 1 normal forwards soleilGoGauche;
+
+		}
+
+		
+		.enAttente#page2 #soleil{
+			
+			animation: 5s 1 normal forwards soleilGoDroite;
+			
+		} 
+		
+		@keyframes soleilGoDroite{
+			from{margin-right:0%;}
+			to{margin-right:-100%;}
+		}
+		
+		@keyframes soleilGoGauche{
+			from{margin-right:-100%;}
+			to{margin-right:0%;}
+		}
+
+		
+		/*TERRE*/
+		
+		.enAttente#page2>*{
+		
+			animation: 5s 1 normal forwards terreQuiTombe;
+		
+		}
+		
+		#page2>*{
+		
+			animation: 5s 1 normal forwards terreQuiMonte;
+		
+		}
+		
+		
+		@keyframes terreQuiMonte{
+
+			from{margin-top:100%;}
+			to{margin-top;0%}
+
+		}
+		
+		@keyframes terreQuiTombe{
+
+			from{margin-top:0%;}
+			to{margin-top:100%;}
+
+		}
+		
+		/*PILONE DE SONDAGE*/
+		
+		.enAttente #option1 , #option2 {
+			
+			
+			
+		}
+		
+		
+		#option1 , #option2 {
+			
+			animation: 5s 1 normal forwards effetRemplissement !important;
+			
+		}
+
+		@keyframes effetRemplissement{
+		
+			from{
+				
+				height:0% !important;
+				width:0%!important;
+				
+			}
+			
+			to{
+				
+				width:100%;
+				height:100%;
+				
+			}
+		}
+
+
+
+
+.pourcentage{
+	
+	bottom:0;
+	text-align:center;
+	font-size:200% !important;
+	
+	
+}
+
+.options{
+	
+	top: -35%;
+	text-align:center;
+	
+}
+
+#question{
+
+	text-align:center;
+	margin-left: auto;
+    margin-right: auto;
+	bottom:0%;
+	text-transform:uppercase;
+	
+}
+
+.sondage{
+
+	position:absolute;
+	z-index:1002;
+	color:white;
+	width:100%;
+	font-family: 'Trebuchet MS', sans-serif;
+	font-size: 300%;
+	font-weight:bolder;
+
+}
+
+
+

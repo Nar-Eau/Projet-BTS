@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2022-12-26" view-index="0" gantt-divider-location="396" resource-divider-location="300" version="2.8.9" locale="fr">
+    <description/>
+    <view zooming-state="default:7" id="gantt-chart">
+        <field id="tpd3" name="Nom" width="283" order="0"/>
+        <field id="tpd4" name="Date de début" width="21" order="1"/>
+        <field id="tpd5" name="Date de fin" width="88" order="2"/>
+        <option id="color.recent"><![CDATA[#6600ff #ffff00 #ff0033 #ff0000 #00cccc #00ccff #ff6600 #ff9900 #9900ff]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nom" width="210" order="0"/>
+        <field id="1" name="Rôle par défaut" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="ETUDIANT 1" color="#ff0033" meeting="false" start="2023-01-02" duration="93" complete="0" thirdDate="2023-01-05" thirdDate-constraint="0" expand="true">
+            <task id="7" name="Réalisation du cahier des charges" color="#ff0033" meeting="false" start="2023-01-02" duration="15" complete="0" thirdDate="2023-01-05" thirdDate-constraint="0" expand="true">
+                <depend id="9" type="2" difference="3" hardness="Strong"/>
+                <task id="33" name="Realisation des differents diagrammes" meeting="false" start="2023-01-02" duration="15" complete="0" expand="true"/>
+                <task id="35" name="Déscription et prevision totale du projet" meeting="false" start="2023-01-09" duration="10" complete="0" expand="true"/>
+                <task id="34" name="Début d'écriture de la revue finale" meeting="false" start="2023-01-16" duration="5" complete="0" expand="true"/>
+            </task>
+            <task id="9" name="Réalisation IHM Globale" color="#ff0033" meeting="false" start="2023-01-26" duration="75" complete="0" thirdDate="2023-01-05" thirdDate-constraint="0" expand="true">
+                <task id="30" name="Application" color="#8cb6ce" meeting="false" start="2023-01-26" duration="75" complete="0" thirdDate="2023-01-31" thirdDate-constraint="0" expand="true">
+                    <depend id="31" type="2" difference="-10" hardness="Strong"/>
+                    <depend id="32" type="2" difference="-45" hardness="Strong"/>
+                </task>
+                <task id="32" name="Interfacage du lecteur de code barre" color="#8cb6ce" meeting="false" start="2023-03-09" duration="25" complete="0" thirdDate="2023-05-01" thirdDate-constraint="0" expand="true"/>
+                <task id="31" name="Communication avec la base de données" color="#8cb6ce" meeting="false" start="2023-04-27" duration="10" complete="0" thirdDate="2023-05-01" thirdDate-constraint="0" expand="true"/>
+            </task>
+            <task id="38" name="Premiere Mise en commun" color="#ffff00" meeting="false" start="2023-01-23" duration="3" complete="0" thirdDate="2023-01-02" thirdDate-constraint="0" expand="true">
+                <notes><![CDATA[Mise en commun informel, c'est avant tout le bon moyen de verifier que tt le monde suit la bonne marche (Recuperer les bonnes date aupres du prof)]]></notes>
+            </task>
+            <task id="39" name="Deuxieme Mise en commun" color="#ffff00" meeting="false" start="2023-03-06" duration="3" complete="0" thirdDate="2022-12-26" thirdDate-constraint="0" expand="true">
+                <notes><![CDATA[revue 2 : mise en commun, presentation du niveau de completion ainsi des differents diagrammes Sysml]]></notes>
+            </task>
+            <task id="40" name="Integration et Mise en commun" color="#ffff00" meeting="false" start="2023-05-08" duration="3" complete="0" thirdDate="2023-01-02" thirdDate-constraint="0" expand="true">
+                <notes><![CDATA[Revue Finale : fin de projet, presentation du projet fini devant un jury ainsi que l'integraation et de la validité de l'application. ]]></notes>
+            </task>
+        </task>
+        <task id="4" name="ETUDIANT 2" color="#6600ff" meeting="false" start="2023-01-02" duration="90" complete="0" thirdDate="2023-01-05" thirdDate-constraint="0" expand="true">
+            <task id="14" name="Préparation et Cahier des charges" color="#6600ff" meeting="false" start="2023-01-02" duration="15" complete="0" thirdDate="2023-01-05" thirdDate-constraint="0" expand="true">
+                <depend id="17" type="2" difference="0" hardness="Strong"/>
+                <task id="44" name="Réalisation des diagrammes" color="#8cb6ce" meeting="false" start="2023-01-02" duration="15" complete="0" thirdDate="2022-12-26" thirdDate-constraint="0" expand="true"/>
+                <task id="46" name="Préparation de la base de donnée" meeting="false" start="2023-01-09" duration="5" complete="0" expand="true"/>
+                <task id="47" name="Préparation du site et des services demandée" meeting="false" start="2023-01-09" duration="10" complete="0" expand="true"/>
+            </task>
+            <task id="17" name="Connexion de l'application à la base de données" color="#6600ff" meeting="false" start="2023-01-23" duration="20" complete="0" thirdDate="2023-01-05" thirdDate-constraint="0" expand="true">
+                <depend id="18" type="2" difference="0" hardness="Strong"/>
+                <task id="49" name="Définir les relations entre la machine a voter et le site" color="#8cb6ce" meeting="false" start="2023-01-23" duration="5" complete="0" thirdDate="2022-12-19" thirdDate-constraint="0" expand="true"/>
+                <task id="56" name="Créer la base de donnée définitive" meeting="false" start="2023-01-30" duration="5" complete="0" expand="true"/>
+                <task id="52" name="Relier le passage d'information" meeting="false" start="2023-01-30" duration="15" complete="0" expand="true"/>
+            </task>
+            <task id="18" name="Réalisation d'une IHM" color="#6600ff" meeting="false" start="2023-02-20" duration="55" complete="0" thirdDate="2023-01-05" thirdDate-constraint="0" expand="true">
+                <task id="54" name="Design de la page web" color="#8cb6ce" meeting="false" start="2023-02-20" duration="10" complete="0" thirdDate="2023-02-20" thirdDate-constraint="0" expand="true"/>
+                <task id="58" name="Création des champs de design en HTML CSS" meeting="false" start="2023-02-27" duration="35" complete="0" expand="true"/>
+                <task id="59" name="Finition ( animation, support audio etc )" meeting="false" start="2023-04-03" duration="25" complete="0" expand="true"/>
+            </task>
+        </task>
+        <task id="5" name="ETUDIANT 3" color="#00ccff" meeting="false" start="2023-01-05" duration="1" complete="0" thirdDate="2023-01-05" thirdDate-constraint="0" expand="true">
+            <task id="20" name="Cahier des charges" color="#00ccff" meeting="false" start="2023-01-05" duration="1" complete="0" thirdDate="2023-01-05" thirdDate-constraint="0" expand="true"/>
+            <task id="23" name="Réalisation d'une IHM" color="#00ccff" meeting="false" start="2023-01-05" duration="1" complete="0" thirdDate="2023-01-05" thirdDate-constraint="0" expand="true"/>
+            <task id="24" name="Communication avec la base de donnée" color="#00ccff" meeting="false" start="2023-01-05" duration="1" complete="0" thirdDate="2023-01-05" thirdDate-constraint="0" expand="true"/>
+        </task>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles roleset-name="SoftwareDevelopment"/>
+</project>
